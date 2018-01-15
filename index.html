@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="jumbotron col-8">
+                <h1>Hello, see the world!</h1>
+                <p>...by Train.</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" 
+                    href="https://en.wikipedia.org/wiki/Train"
+                    target="_blank" 
+                    role="button">Learn more</a>
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Current Train Schedule</div>
+            <!-- <div class="panel-body">          
+            </div> -->
+
+            <!-- Table -->
+            <table class="trainble table">
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes away</th>
+                </tr>
+                <tr>
+                    <th class="name"></th>
+                    <th class="role"></th>
+                    <th class="startDate"></th>
+                    <th class="monthsWorked"></th>
+                    <th class="monthlyRate"></th>
+                    <th class="totalBilled"></th>
+                </tr>
+
+
+
+
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Add Train</div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Train Name</span>
+                <input name="name" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Destination</span>
+                <input type="text" name='destination' class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">First Train Time (HH:mm) Military Time</span>
+                <input name="firstTime" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Frequency</span>
+                <input name="frequency" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <button class="btn btn-primary submit">Submit</button>
+    </div>
+
+    <script src="./assets/javascript/logic.js"></script>
+</body>
