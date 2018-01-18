@@ -17,9 +17,7 @@
                 <h1>Hello, see the world!</h1>
                 <p>...by Train.</p>
                 <p>
-                    <a class="btn btn-primary btn-lg" 
-                    href="https://en.wikipedia.org/wiki/Train"
-                    target="_blank" >Learn More</a>
+                    <a class="btn btn-primary btn-lg" href="https://en.wikipedia.org/wiki/Train" target="_blank">Learn More</a>
                 </p>
             </div>
             <div class="col-2"></div>
@@ -72,11 +70,26 @@
             </div>
             <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">First Train Time (HH:mm) Military Time</span>
-                <input name="firstTime" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                <input name="firstTime" type="time" class="form-control" placeholder="" aria-describedby="basic-addon1">
             </div>
             <div class="input-group">
                 <span class="input-group-addon" id="basic-addon1">Frequency</span>
-                <input name="frequency" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                <input name="frequency" list="tickmarks" type="range" value="" min="0" max="60" step="5" class="form-control" placeholder="" aria-describedby="basic-addon1">
+                <datalist id="tickmarks">
+                    <option value="0" label="0 Min">
+                    <option value="5">
+                    <option value="10">
+                    <option value="15">
+                    <option value="20">
+                    <option value="25">
+                    <option value="30" label="30 Min">
+                    <option value="35">
+                    <option value="40">
+                    <option value="45">
+                    <option value="50">
+                    <option value="55">
+                    <option value="60" label="60 Min">
+                  </datalist>
             </div>
         </div>
         <button class="btn btn-primary submit">Submit</button>
